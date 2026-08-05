@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/home/voltsy/.local/share/coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/home/voltsy/Projects/GISCausalSystem/.scala-build/ide-options-v2.json",
+    "--json-launcher-options",
+    "/home/voltsy/Projects/GISCausalSystem/.scala-build/ide-launcher-options.json",
+    "--envs-file",
+    "/home/voltsy/Projects/GISCausalSystem/.scala-build/ide-envs.json",
+    "/home/voltsy/Projects/GISCausalSystem/geojson_preprocess.scala"
+  ],
+  "version": "1.12.4",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}

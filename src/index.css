@@ -1,0 +1,53 @@
+:root {
+  --bg:         #0a0f0d;
+  --panel:      #111814;
+  --panel2:     #161c18;
+  --border:     #1f2e24;
+  --green:      #22c55e;
+  --green-dim:  #16a34a;
+  --green-glow: rgba(34, 197, 94, 0.15);
+  --red:        #ef4444;
+  --text:       #e2e8e4;
+  --muted:      #6b7c71;
+  --accent:     #4ade80;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* Animations */
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.15; r: 1.4; }
+  50%       { opacity: 0.35; r: 2.0; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes status-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
